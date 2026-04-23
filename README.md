@@ -1,2 +1,2 @@
 # Test-git-action
-This repo is made to test the github action, will delete is soon.
+This repo is made to test the github action, will delete it soon.
