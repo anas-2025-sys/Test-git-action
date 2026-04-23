@@ -1,11 +1,19 @@
-name: Simple CI
+name: Simple CI Test
 
-on: [push]
+on:
+  push:
+    branches:
+      - dev2   # since you pushed dev2 branch
 
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - run: npm install
-      - run: npm test
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
