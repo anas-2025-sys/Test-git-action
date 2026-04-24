@@ -1,0 +1,9 @@
+name: Hello 1 form workflow hello-singleJob
+
+on: push
+
+jobs: 
+  say-Hello-One:
+    runs-on: ubuntu-latest 
+    steps:
+      - run: echo "Hello from the workflow file 1 singleJob.yaml"
